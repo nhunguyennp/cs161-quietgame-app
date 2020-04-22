@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Quiet Game</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0/dist/tf.min.js"></script>
+    
+
+    <script type="module" src="/js/main.js"></script>
+</head>
+
+<body>
+
+	<header>
+    <b>A Quiet Game</b> <br/>
+  </header>
+  <h2>
+    Play the Game using your <b>Hand</b> as controller via <b>Web Camera</b>.
+  </h2>
+
+
+  	<div id="no-webcam">
+      No webcam found. <br/>
+      To play this game, use a device with a webcam.
+    </div>
+
+   	<canvas id="screen" width="272" height="240"></canvas>
+
+    
+
+    <button id="start-button" onClick="init()">START</button>
+
+   	<div class="panel-row panel-row-top">
+      <div class="panel-cell panel-cell-left panel-cell-fill">
+          <p class="help-text">
+          Sign the letter that <br/>
+          appears on the<br/>
+          screen to move the <br/>
+          character forward
+          </p>
+        </div><!-- ./panel-cell -->
+
+      <div class="panel-cell panel-cell-center">
+   	 	<div class="webcam-box-outer">
+          <div class="webcam-box-inner">
+              <div id="webcam-container">
+              </div>
+			   </div>
+		  </div>
+    </div>
+    
+
+        <div class="panel-cell panel-cell-right panel-cell-fill">
+          <div class="panel-cell-inner">
+            <div class="line"></div>
+            <p class="statistics-text">STATISTICS</p>
+            <div id="label-container"></div>
+            <div class="stopwatch"></div>
+            <ul class ="result"></ul>
+          </div>
+        </div>
+        
+    </div>
+
+  <div class="form-popup" id="inputForm">
+    <p class="statistics-text">You Won!</p>
+    <p class="statistics-text">Submit your time to Leadership Board</p>
+
+    <form action="/record" method="POST">
+              <input type="text" placeholder="Enter Name" name="name">
+              <input type="hidden" name="time" id="time">
+              <button type="submit" onclick="openLeadership()">Submit</button>
+    </form>
+  </div>
+    
+
+    
+
+    <p id="copyright"><b>A QUIET GAME</b> by Darpan Goyal, Nhu Nguyen, and Pratyusha Pogaru.</p>
+
+    <script type="module" src="/js/main.js"></script>
+
+
+
+</body>
+</html>

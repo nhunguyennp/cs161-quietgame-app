@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Quiet Game</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0/dist/tf.min.js"></script>
+    
+
+    <script type="module" src="/js/main.js"></script>
+</head>
+
+<body>
+
+	<header>
+    <b>A Quiet Game</b> <br/>
+  </header>
+  <h2>
+    Welcome to the <b>LEADERSHIPBOARD</b>!!!
+  </h2>
+
+
+  	<div id="no-webcam">
+      No webcam found. <br/>
+      To play this game, use a device with a webcam.
+    </div>
+
+  <ul style="list-style-type:none;" class="records">
+  <!-- Loop through quotes -->
+  <% for(var i = 0; i < records.length; i++) {%>
+    <li class="record">
+      <!-- Output name from the iterated quote object -->
+      <span class="name""><%= records[i].name %></span>:
+      <!-- Output quote from the iterated quote object -->
+      <span class="time"><%= records[i].time %></span>
+    </li>
+  <% } %>
+  </ul>
+    
+
+    
+
+    <p id="copyright"><b>A QUIET GAME</b> by Darpan Goyal, Nhu Nguyen, and Pratyusha Pogaru.</p>
+
+    <script type="module" src="/js/main.js"></script>
+
+
+
+</body>
+</html>

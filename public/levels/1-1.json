@@ -1,0 +1,329 @@
+{
+    "spriteSheet": "overworld",
+
+    "backgrounds": [
+        {
+            "tile": "sky",
+            "ranges": [
+                [
+                    0, 212,
+                    0, 13
+                ]
+            ]
+        },
+        {
+            "tile": "ground",
+            "type": "ground",
+            "ranges": [
+                [
+                    0, 212,
+                    13, 2
+                ]
+            ]
+        },
+        {
+            "tile": "ground",
+            "type": "ground",
+            "ranges": [
+                [
+                    29, 5
+                ],
+                [
+                    2, 1,
+                    11, 1
+                ]
+            ]
+        },
+        {
+            "tile": "bricks",
+            "type": "ground",
+            "ranges": [
+                [
+                    27, 5,
+                    4
+                ],
+                [
+                    83, 3,
+                    4
+                ],
+                [
+                    86, 6,
+                    5
+                ],
+                [
+                    96, 3,
+                    5
+                ],
+                [
+                    99, 4
+                ],
+                [
+                    105, 2,
+                    4
+                ],
+                [
+                    123, 5
+                ],
+                [
+                    126, 3,
+                    5
+                ],
+                [
+                    132, 4,
+                    5
+                ],
+                [
+                    133, 2,
+                    4
+                ],
+                [
+                    171, 4,
+                    4
+                ]
+            ]
+        },
+        {
+            "tile": "chance",
+            "type": "ground",
+            "ranges": [
+                [2, 9],
+                [23, 4],
+                [28, 4],
+                [30, 5],
+                [29, 4],
+                [84, 4],
+                [99, 5],
+
+                [114, 5],
+                [111, 4],
+                [114, 4],
+                [117, 4],
+
+                [133, 2, 5],
+
+                [173, 9]
+
+            ]
+        },
+        {
+            "tile": "letter-a",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "A",
+            "ranges": [
+                [7, 11]
+
+            ]
+        },
+        {
+            "tile": "letter-b",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "B",
+            "ranges": [
+                [13, 11]
+
+            ]
+        },
+        {
+            "tile": "letter-c",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "C",
+            "ranges": [
+                [19, 11]
+
+            ]
+        },
+        {
+            "tile": "letter-d",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "D",
+            "ranges": [
+                [25, 11]
+
+            ]
+        },
+        {
+            "tile": "letter-e",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "E",
+            "ranges": [
+                [31, 11]
+            ]
+        },
+        {
+            "tile": "letter-f",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "F",
+            "ranges": [
+                [37, 11]
+            ]
+        },
+        {
+            "tile": "letter-g",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "G",
+            "ranges": [
+                [43, 11]
+            ]
+        },
+        {
+            "tile": "letter-h",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "H",
+            "ranges": [
+                [49, 11]
+            ]
+        },
+        {
+            "tile": "letter-i",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "I",
+            "ranges": [
+                [55, 11]
+            ]
+        },
+        {
+            "tile": "letter-k",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "K",
+            "ranges": [
+                [61, 11]
+            ]
+        },
+        {
+            "tile": "letter-l",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "L",
+            "ranges": [
+                [67, 11]
+            ]
+        },
+        {
+            "tile": "letter-m",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "M",
+            "ranges": [
+                [73, 11]
+            ]
+        },
+        {
+            "tile": "letter-n",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "N",
+            "ranges": [
+                [79, 11]
+            ]
+        },
+        {
+            "tile": "letter-o",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "O",
+            "ranges": [
+                [85, 11]
+            ]
+        },
+        {
+            "tile": "letter-p",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "P",
+            "ranges": [
+                [91, 11]
+            ]
+        },
+        {
+            "tile": "letter-q",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "Q",
+            "ranges": [
+                [97, 11]
+            ]
+        },
+        {
+            "tile": "letter-r",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "R",
+            "ranges": [
+                [103, 11]
+            ]
+        },
+        {
+            "tile": "letter-s",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "S",
+            "ranges": [
+                [109, 11]
+            ]
+        },
+        {
+            "tile": "letter-t",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "T",
+            "ranges": [
+                [115, 11]
+            ]
+        },
+        {
+            "tile": "letter-u",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "U",
+            "ranges": [
+                [121, 11]
+            ]
+        },
+        {
+            "tile": "letter-v",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "V",
+            "ranges": [
+                [127, 11]
+            ]
+        },
+        {
+            "tile": "letter-w",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "W",
+            "ranges": [
+                [133, 11]
+            ]
+        },
+        {
+            "tile": "letter-x",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "X",
+            "ranges": [
+                [139, 11]
+            ]
+        },
+        {
+            "tile": "letter-y",
+            "type": "ground",
+            "subtype": "letter",
+            "letter": "Y",
+            "ranges": [
+                [145, 11]
+            ]
+        }
+    ]
+}
