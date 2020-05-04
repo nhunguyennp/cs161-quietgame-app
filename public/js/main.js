@@ -14,8 +14,8 @@ const canPredict = true;
 
 let model, webcam, labelContainer, maxPredictions, stopwatch, time, inputForm;
 const webcamElement = document.getElementById('webcam');
+//const URL = "https://teachablemachine.withgoogle.com/models/0WIsz2_Gr/";
 const URL = "https://teachablemachine.withgoogle.com/models/0WIsz2_Gr/";
-//const URL = "https://teachablemachine.withgoogle.com/models/OetfDNtnC/";
 
 
 // Promize.all to loadBackgroundSprites() and loadLevel()
@@ -107,7 +107,7 @@ Promise.all([
             {
 
                 const classPrediction = predictions[i].className + ": " + predictions[i].probability.toFixed(2);
-                if (predictions[0].className == queue.front() && predictions[0].probability.toFixed(2) >= 0.85)
+                if (predictions[0].className == queue.front() && predictions[0].probability.toFixed(2) >= 0.80)
                 {
                     //console.log(predictions[0].className);
                     queue.dequeue();
